@@ -1,0 +1,16 @@
+ 2 - Overview
+  Grid Layout controls the layout of its content through the use of a grid: an intersecting set of horizontal and vertical lines which create a sizing and positioning coordinate system for the grid container’s contents. Grid Layout features
+
+   > fixed, flexible, and content-based track sizing functions
+   > explicit item placement via forwards (positive) and backwards (negative) numerical grid coordinates, named grid lines, and named grid areas; automatic item placement into empty areas, including reordering with order
+   > space-sensitive track repetition and automatic addition of rows or columns to accommodate additional content
+   > control over alignment and spacing with margins, gutters, and the alignment properties
+   > the ability to overlap content and control layering with z-index 
+
+    Grid containers can be nested or mixed with flex containers as necessary to create more complex layouts.
+
+2.1. Declaring the Grid
+    The tracks (rows and columns) of the grid are declared and sized either explicitly through the explicit grid properties or are implicitly created when items are placed outside the explicit grid. 
+    The grid shorthand and its sub-properties define the parameters of the grid.
+
+ explicit grid : {  grid-template-rows, grid-template-columns  and grid-template-areas }
