@@ -1,0 +1,6 @@
+1.1.2. Source-Order Independence
+    Note: The reordering capabilities of grid layout intentionally affect only the 
+    visual rendering, leaving speech order and navigation based on the source order. 
+    This allows authors to manipulate the visual presentation while leaving the source order 
+    intact and optimized for non-CSS UAs and for linear models such as speech and sequential 
+    navigation.
