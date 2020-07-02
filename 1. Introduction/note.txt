@@ -1,0 +1,20 @@
+Grid Layout is a new layout model for CSS that has powerful abilities to 
+control the sizing and positioning of boxes and their contents. 
+Unlike Flexible Box Layout, which is single-axis–oriented, Grid Layout is optimized 
+for 2-dimensional layouts: those in which 
+alignment of content is desired in both dimensions.
+
+In addition, due to its ability to explicitly position items in the grid, Grid Layout 
+allows dramatic transformations in visual layout structure without requiring corresponding 
+markup changes. By combining media queries with the CSS properties that control layout of the 
+grid container and its children, authors can adapt their layout to changes in device form factors,
+orientation, and available space, while preserving a more ideal semantic structuring of their 
+content across presentations.
+
+Although many layouts can be expressed with either Grid or Flexbox,
+they each have their specialties. Grid enforces 2-dimensional alignment, uses a top-down
+approach to layout, allows explicit overlapping of items, and has more powerful spanning 
+capabilities. Flexbox focuses on space distribution within an axis, uses a simpler bottom-up
+approach to layout, can use a content-size–based line-wrapping system to control its secondary
+axis, and relies on the underlying markup hierarchy to build more complex layouts. 
+It is expected that both will be valuable and complementary tools for CSS authors.
