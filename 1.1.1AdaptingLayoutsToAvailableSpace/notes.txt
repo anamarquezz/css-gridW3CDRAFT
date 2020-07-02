@@ -1,0 +1,2 @@
+1.1.1. Adapting Layouts to Available Space
+    Grid layout can be used to intelligently resize elements within a webpage
