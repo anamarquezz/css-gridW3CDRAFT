@@ -1,0 +1,5 @@
+1.1.1. Adapting Layouts to Available Space
+    Grid layout can be used to intelligently resize elements within a webpage    
+
+    Note: There are multiple ways to specify the structure of the grid and to position 
+        and size grid items, each optimized for different scenarios.

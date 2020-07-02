@@ -1,0 +1,67 @@
+
+
+#grid {
+    /**
+   Below are some examples of grid declarations:
+The following declares a grid with four named areas:
+ H, A, B, and F. The first column is sized to fit its contents (auto),
+  and the second column takes up the remaining space (1fr). Rows default 
+  to auto (content-based) sizing; the last row is given a fixed size of 30px.
+   */
+    display: grid;
+     grid:  "H    H "
+            "A    B "
+            "F    F " 30px
+        /     auto 1fr;
+}
+
+/*
+
+The following declares a grid with as many rows of at least 5em as will 
+fit in the height of the grid container (20h). The grid has no explicit columns; 
+instead columns are added as content is added, the resulting column widths are equalized (1fr).
+ Since content overflowing to the right won’t print, an alternate layout for printing adds rows instead.
+*/
+#grid2 {
+    display: grid;
+    grid: repeat(auto-fill, 5em) / auto-flow 1fr;
+    height: 20vh;
+  }
+
+  @media print {
+    #grid2 {
+        display: grid;
+        grid: auto-flow 1fr / repeat(auto-fill, 5em);
+    }
+  }
+
+  /*The following declares a grid with 5 evenly-sized columns 
+  and three rows, with the middle row taking up all remaining 
+  space (and at least enough to fit its contents).*/
+  #grid3 {
+      display: grid;
+    grid: auto 1fr auto / repeat(5, 1fr);
+    min-height: 10vh;
+  }
+
+#title {
+   
+    background-color: blue;
+}
+
+#score {
+  
+    background-color: rgb(218, 65, 192);
+}
+
+#stats {  
+    background-color: rgb(147, 28, 226);
+}
+
+#board {  
+    background-color: rgb(20, 169, 206);
+}
+
+#controls {    
+    background-color: rgb(0, 255, 55);
+}

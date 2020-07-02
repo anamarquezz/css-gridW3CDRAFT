@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2.1. Declaring the Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>
+        The following declares a grid with four named areas: H, A, B, and F. The first column is sized to fit its contents (auto), and the second column takes up the remaining space (1fr). Rows default to auto (content-based) sizing; the last row is given a fixed size of 30px. 
+    </p>
+    <div id="grid">
+        <div id="title">Game Title</div>
+        <div id="score">Score</div>
+        <div id="stats">Stats</div>
+        <div id="board">Board</div>
+        <div id="controls">Controls</div>
+      </div>
+      <br><br>
+      <p>The following declares a grid with as many rows of at least 5em as will fit in the height of the grid container (100vh). The grid has no explicit columns; instead columns are added as content is added, the resulting column widths are equalized (1fr). Since content overflowing to the right won’t print, an alternate layout for printing adds rows instead.</p>
+      <div id="grid2">
+        <div id="title">Game Title</div>
+        <div id="score">Score</div>
+        <div id="stats">Stats</div>
+        <div id="board">Board</div>
+        <div id="controls">Controls</div>
+        <div id="title">Game Title</div>
+        <div id="score">Score</div>
+        <div id="stats">Stats</div>
+        <div id="board">Board</div>
+        <div id="controls">Controls</div>
+        <div id="title">Game Title</div>
+        <div id="score">Score</div>
+        <div id="stats">Stats</div>
+        <div id="board">Board</div>        
+      </div>
+      <br>
+      <p>The following declares a grid with 5 evenly-sized columns and three rows, with the middle row taking up all remaining space (and at least enough to fit its contents).</p>
+      <div id="grid3">
+        <div id="title">Game Title</div>
+        <div id="score">Score</div>
+        <div id="stats">Stats</div>
+        <div id="board">Board</div>
+        <div id="title">Game Title</div>
+        <div id="score">Score</div>
+        <div id="stats">Stats</div>
+        <div id="board">Board</div>
+        <div id="stats">Stats</div>
+        <div id="board">Board</div>
+    </div>
+
+
+</body>
+
+</html>
